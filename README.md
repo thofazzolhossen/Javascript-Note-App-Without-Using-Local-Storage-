@@ -29,5 +29,5 @@ A simple web-based note-taking application that allows users to create, edit, an
 - Improve the UI with better styling and animations.
 
 ## Author
-Developed by **[Your Name]**
+Developed by **[Thofazzol Hossen]**
 
