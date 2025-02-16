@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#addNote {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#notesContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.note {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    background: yellow;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    cursor: text;
+}

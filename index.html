@@ -4,62 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        #addNote {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #notesContainer {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            flex-direction: row;
-        }
-        .note {
-            width: 300px;
-            height: 150px;
-            padding: 10px;
-            background: yellow;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow: auto;
-            cursor: text;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <button id="addNote">Add Note</button>
     <div id="notesContainer"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const addNoteBtn = document.getElementById("addNote");
-            const notesContainer = document.getElementById("notesContainer");
-    
-            addNoteBtn.addEventListener("click", addNote);
-        });
-    
-        function addNote() {
-            const notesContainer = document.getElementById("notesContainer");
-            const note = document.createElement("div");
-            note.classList.add("note");
-            note.setAttribute("contenteditable", "true");
-            note.textContent = "New Note";
-    
-            note.addEventListener("dblclick", removeNote);
-    
-            notesContainer.insertBefore(note, notesContainer.firstChild);
-        }
-    
-        function removeNote(event) {
-            event.target.remove();
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
